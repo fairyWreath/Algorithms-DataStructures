@@ -14,6 +14,8 @@ int maxDepth(TreeNode* root) {
 
     int maxLeft = maxDepth(root->left);         
     int maxRight = maxDepth(root->right);
+
+    // adding is done here
     if (maxLeft > maxRight)
         return maxLeft+1;
     else
@@ -22,5 +24,5 @@ int maxDepth(TreeNode* root) {
 }
 
 /* Related Topics
-
+trees
 */

@@ -3,15 +3,6 @@
 
 using namespace std;
 
-// xor solution
-int singleNumber(vector<int>& nums) {
-    int sing = 0;
-    for (auto& num : nums)
-        sing ^= num;
-    return sing;
-}
-
-
 
 // hash table solution
 int singleNumberHash(vector<int>& nums) {
@@ -31,6 +22,17 @@ int singleNumberHash(vector<int>& nums) {
     
     return 0;
 }
+
+// xor solution
+int singleNumber(vector<int>& nums) {
+    int sing = 0;
+    for (auto& num : nums)
+        sing ^= num;
+    return sing;
+}
+
+
+
 
 
 
