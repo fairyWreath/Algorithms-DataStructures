@@ -8,6 +8,7 @@ int chtoint(char c) {
     return static_cast<int>(c - 'a');
 }
 
+// O(n) where n = word size
 
 bool closeStrings(string word1, string word2) {
     if (word1.size() != word2.size()) return false;

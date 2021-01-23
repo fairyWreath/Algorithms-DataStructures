@@ -1,0 +1,12 @@
+WEAKEST
+
+backtracking/perms
+
+trees
+stacks
+string
+linked list
+
+
+
+OKAY
