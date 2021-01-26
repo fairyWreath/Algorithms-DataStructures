@@ -30,3 +30,6 @@ vector<int> plusOne(vector<int>& digits) {
     reverse(res.begin(), res.end());
     return res;
 }
+
+
+// arrays
