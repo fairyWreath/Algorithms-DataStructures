@@ -3,8 +3,6 @@
 
 using namespace std;
 
-
-
 struct TreeNode {
     int val;
     TreeNode *left;
@@ -14,6 +12,7 @@ struct TreeNode {
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
+// create a sorted array from the bst then make a new bst through binary search
 
 void inorder(TreeNode* root, vector<int>& arr) {
     if (root == nullptr) return;
