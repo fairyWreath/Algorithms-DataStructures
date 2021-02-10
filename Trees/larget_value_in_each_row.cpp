@@ -19,8 +19,7 @@ class Solution {
 public:
     void order(TreeNode* root, vector<int>& res, int level) {
         if(!root) return;
-        
-        // do bfs, newest will always be the currently deepest one
+
         if(res.size() < level+ 1) res.push_back(root->val);
         else if (root->val > res[level]) res[level] = root->val;
       

@@ -28,3 +28,4 @@ bool isBalanced(TreeNode* root) {
     return checkBalance(root) != INT_MIN;       // INT_MIN is the error code
 }
 
+// trees

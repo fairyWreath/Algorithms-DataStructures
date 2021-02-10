@@ -27,9 +27,11 @@ vector<string> letterCombinations(string digits) {
     vector<vector<char>> charpool;
     
     vector<string> chars = {"abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+    
+    // you do not have to create a pool
     vector<string> pool;
     
-        for(char& c : digits) {
+    for(char& c : digits) {
         pool.push_back(chars[static_cast<int>(c - '0') - 2]);
     }
     

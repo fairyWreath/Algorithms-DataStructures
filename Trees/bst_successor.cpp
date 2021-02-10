@@ -17,7 +17,7 @@ using namespace std;
 // from ece 250 :)
 
 TreeNode* minimumBST(TreeNode* node) {
-    while(node->left != nullptr)
+    while(node->left->left != nullptr)
         node = node->left;
     return node;
 }
@@ -30,7 +30,7 @@ TreeNode* bstSuccessor(TreeNode* node) {
 
     // if right is empty, check that current node is a right child or not;
     // if it is a left child simply return the parent
-    // if it is a right child , go up the tree and repeat    
+    // if it is a right child , go up the tree and repeat    until the 'leftmost' top of the subtree is reached(the smallest)
     TreeNode* temp = node->parent;
     while(temp != nullptr && node == temp->right) {
         node = temp;
